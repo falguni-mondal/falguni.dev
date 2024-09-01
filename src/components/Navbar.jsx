@@ -6,9 +6,9 @@ const Navbar = () => {
     useGSAP(() => {
         gsap.from(".main-header", {
             top: '-10vh',
-            duration: 1.5,
+            duration: 1,
             ease: "power4.Out",
-            delay: 0.7
+            delay: 1.3
         })
     })
     // className='w-[80px] 2xl:w-[150px]'

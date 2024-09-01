@@ -5,6 +5,7 @@
 html {
     /* font-family: "Satoshi", sans-serif !important; */
     font-family: "Poppins", sans-serif;
+    scroll-behavior: auto !important;
     /* color: #242329; */
     /* color: #2e2d35; */
     /* color: #28272e; */
@@ -54,4 +55,10 @@ html {
 }
 .font-awesome{
     font-family: "Pacifico", cursive !important;
+}
+
+@media (max-width: 500px) {
+    html{
+        scroll-behavior: smooth;
+    }
 }
