@@ -40,7 +40,7 @@ const Hero = () => {
       <SectionHeading heading={"Hello"} size={'text-[35vw]'} font={'font-awesome'} tracking={'tracking-tight'} />
       <h1 className='relative my-intro-cont z-2 top-[-8vh] flex flex-col items-center font-semibold leading-tight mt-5'><span className='block overflow-hidden h-[3.5vh]'><span className='my-intro block text-[6vw]'>I am</span></span><span className='block overflow-hidden h-[8.2vh]'><span className='my-name text-[13vw] font-semibold tracking-tighter block leading-none'>Falguni.</span></span></h1>
       <div className='my-info relative top-[-5vh] w-[95%] h-[40vh] rotate-3 flex justify-center items-center  mx-auto'>
-        <img className='my-img w-full h-full object-cover object-center rounded-lg shadow-2xl shadow-[rgba(39,223,179,0.15)]' src={falgunimin} alt="" />
+        <img className='my-img w-full h-full object-cover object-center rounded-lg shadow-2xl shadow-[rgba(39,223,179,0.15)]' src={falgunimin} alt="" fetchPriority='high' />
       </div>
       <Socials />
     </section>
