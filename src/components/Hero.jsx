@@ -1,4 +1,4 @@
-import falguni from '../assets/mine/falgunimin.jpg'
+import falgunimin from '../assets/mine/falgunimin.jpg'
 import SectionHeading from './SectionHeading'
 import Socials from './Socials'
 import { useGSAP } from '@gsap/react'
