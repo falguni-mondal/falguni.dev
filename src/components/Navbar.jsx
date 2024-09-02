@@ -6,12 +6,11 @@ const Navbar = () => {
     useGSAP(() => {
         gsap.from(".main-header", {
             top: '-10vh',
-            duration: 1,
+            duration: 0.7,
             ease: "power4.Out",
-            delay: 1.3
+            delay: 1.2
         })
     })
-    // className='w-[80px] 2xl:w-[150px]'
     return (
         <header className='main-header py-3 lg:py-8 flex justify-between items-center bg-zinc-950 fixed z-50 w-full left-0 top-0 px-5 2xl:px-0 lg:px-10'>
             <div className="logo">

@@ -13,24 +13,24 @@ const Hero = () => {
       rotate: -2,
       borderRadius: 0,
       ease: "power4.inOut",
-      duration: 3,
+      duration: 2.5,
     })
     gsap.from(".my-name", {
       y: "8vh",
       ease: "power4.Out",
       duration: 0.9,
-      delay: 1.3,
+      delay: 1.2,
     })
     gsap.from(".my-intro", {
       y: "4vh",
       ease: "power4.Out",
       duration: 0.9,
-      delay: 1.3,
+      delay: 1.2,
     })
     gsap.from('.socials-container',{
       y: "15vh",
       duration: 0.7,
-      delay: 1.3,
+      delay: 1.2,
       ease: "power4.Out",
     })
   })

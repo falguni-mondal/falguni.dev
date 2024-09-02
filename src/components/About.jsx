@@ -18,7 +18,7 @@ const About = () => {
             }
         })
         {
-            ['about-underline', 'connect-underline'].map((elem, index) => {
+            ['about-underline', 'connect-underline', 'project-underline', 'skill-underline', 'certify-underline'].map((elem, index) => {
                 gsap.from(`.${elem}`,{
                     width: 0,
                     duration: 1.5,
