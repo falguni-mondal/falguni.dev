@@ -9,7 +9,7 @@ const Contact = () => {
   const [visible, setVisible] = useState(false)
 
   const formHandler = (e) => {
-    e.preventDefault()
+    // e.preventDefault()
     setVisible(true);
     setTimeout(()=>{
       setVisible(false);
