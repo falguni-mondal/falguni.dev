@@ -9,7 +9,8 @@ const Contact = () => {
     <section id='contact' className='w-full mt-[15vh]'>
       <SectionHeading heading={'Connect.'} />
       <div className="contact-here flex flex-col gap-20 mt-[5vh]">
-        <form className='w-full flex flex-col gap-8' name='contact' netlify >
+        <form className='w-full flex flex-col gap-8' name='contact' data-netlify="true" >
+          <input type="hidden" name="form-name" value="contact" />
           <input className='w-full outline-none py-2 bg-transparent border-b-2 border-[#f8f8f8] placeholder:text-[#f8f8f8]' placeholder='Your email' type="email" />
           <textarea className='w-full outline-none bg-transparent border-b-2 border-[#f8f8f8] placeholder:text-[#f8f8f8]' placeholder='Message' rows={6} name="message" id="connnect-message"></textarea>
           <button type='submit' className='text-[#242329] bg-[#27DFB3] font-medium py-2.5 w-[45vw] rounded-full'>Send Message</button>
