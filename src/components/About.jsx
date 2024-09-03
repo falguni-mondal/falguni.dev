@@ -55,7 +55,7 @@ const About = () => {
                             <span key={index} className='splitted-about'>{val}</span>
                         ))
                     }
-                    <a href='mailto:heya.falguni@gmail.com' className='inline-flex flex-col splitted-about ml-3 leading-none font-semibold'>Let's connect! <span className='connect-underline h-[2px] bg-[#f8f8f8]'></span></a>
+                    <a href='#contact' className='inline-flex flex-col splitted-about ml-3 leading-none font-semibold'>Let's connect! <span className='connect-underline h-[2px] bg-[#f8f8f8]'></span></a>
                 </p>
             </div>
         </section>
