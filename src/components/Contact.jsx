@@ -1,20 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SectionHeading from './SectionHeading'
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
+import { VscVerifiedFilled } from "react-icons/vsc";
 
 
 const Contact = () => {
+  const [visible, setVisible] = useState(false)
 
+  const formHandler = (e) => {
+    e.preventDefault()
+    setVisible(true);
+    setTimeout(()=>{
+      setVisible(false);
+    }, 2500)
+  }
   return (
     <section id='contact' className='w-full mt-[15vh]'>
       <SectionHeading heading={'Connect.'} />
       <div className="contact-here flex flex-col gap-20 mt-[5vh]">
-        <form className='w-full flex flex-col gap-8' name='contact' netlify >
+        <form onSubmit={(e) => { formHandler(e) }} className='w-full flex flex-col gap-8' name='contact' netlify >
           <input name='Email' className='w-full outline-none py-2 bg-transparent border-b-2 border-[#f8f8f8] placeholder:text-[#f8f8f8]' placeholder='Your email' type="email" />
-          <textarea name='Message' className='w-full outline-none bg-transparent border-b-2 border-[#f8f8f8] placeholder:text-[#f8f8f8]' placeholder='Message' rows={6} name="message" id="connnect-message"></textarea>
+          <textarea name='Message' className='w-full outline-none bg-transparent border-b-2 border-[#f8f8f8] placeholder:text-[#f8f8f8]' placeholder='Message' rows={6} id="connnect-message"></textarea>
           <button type='submit' className='text-[#242329] bg-[#27DFB3] font-medium py-2.5 w-[45vw] rounded-full'>Send Message</button>
         </form>
+        <span className={`fixed top-10 left-[50%] -translate-x-[50%] z-50 sendMsg inline-flex items-center gap-1 text-[4.5vw] px-6 py-2 rounded-md ${visible ? 'scale-100' : 'scale-0'} transition-all`}>
+          <VscVerifiedFilled className='text-[#27DFB3]' /> Sent
+        </span>
         <div className="contact-dets-sontainer flex flex-col gap-8">
           <div className='contact-dets flex flex-col'>
             <h3 className='text-[4vw] font-semibold mb-2'>Contact Details</h3>
