@@ -21,8 +21,8 @@ const Projects = () => {
     {
       ['.project', '.course'].map((elem) => {
         gsap.from(`${elem}`, {
-          y: 150,
-          opacity: 0.3,
+          y: 100,
+          opacity: 0,
           stagger: 0.25,
           scrollTrigger: {
             trigger: `${elem}`,
