@@ -38,19 +38,19 @@ const Hero = () => {
   })
 
   return (
-    <section id='hero' className='hero-section pt-[10dvh] lg:pt-[12dvh]'>
-      <div className="hero-container relative w-full flex flex-col items-center">
-        <span className='hero-lighting block w-[30vw] h-[30vw] rounded-full absolute bg-[#27DFB3] blur-[80px] lg:blur-[300px] lg:scale-[0.5] bottom-0 lg:right-0 lg:bottom-[-40vh] opacity-50'></span>
+    <section id='hero' className='hero-section lg:pt-[12dvh]'>
+      <div className="hero-container relative w-full h-[92vh] flex flex-col items-center justify-center">
+        <span className='hero-lighting block w-[30vw] h-[30vw] rounded-full absolute bg-[#27DFB3] blur-[80px] lg:blur-[300px] lg:scale-[0.5] bottom-[20vh] lg:right-0 lg:bottom-[-40vh] opacity-50'></span>
 
         <span className='hero-lighting block w-[30vw] h-[30vw] rounded-full absolute bg-[#27DFB3] blur-[70px] lg:blur-[300px] lg:scale-[0.5] top-[-10vh] left-[50] lg:left-[-2vw] lg:opacity-80 opacity-50'></span>
 
         <div className="hero-main flex flex-col lg:h-auto lg:flex-row-reverse justify-center">
-          <div className='my-img-container w-[35vw] h-[35vw] mx-auto lg:h-auto flex-shrink-0 lg:flex lg:items-center'>
+          {/* <div className='my-img-container w-[35vw] h-[35vw] mx-auto lg:h-auto flex-shrink-0 lg:flex lg:items-center'>
             <img className='my-img w-full h-full mx-auto lg:w-[15vw] lg:mb-[8vh] object-cover object-center rounded-full shadow-2xl shadow-[rgba(39,223,179,0.15)]' src={falgunimin} alt="" fetchPriority='high' />
-          </div>
+          </div> */}
           <div className="my-info text-center lg:text-left  mt-[1vh] flex flex-col items-center lg:w-[70%] lg:h-full lg:items-start lg:justify-center">
-            <h1 className='hero-heading splitted-hero-txt text-[8vw] lg:text-[3vw] font-medium'><span>Hi👋, I'm Falguni</span></h1>
-            <p className='w-full lg:pr-[12vw] text-[6.5vw] lg:text-[2vw] mt-[2vh] leading-tight tracking-tight'>
+            <h1 className='hero-heading splitted-hero-txt text-[9vw] lg:text-[3vw] font-medium flex items-center gap-1'>Hi👋, I'm <span><img className='w-[13.5vw] h-[8vw] mx-auto lg:w-[15vw] lg:mb-[8vh] object-cover object-center rounded-full shadow-2xl shadow-[rgba(39,223,179,0.15)]' src={falgunimin} alt="" fetchPriority='high' /></span> Falguni</h1>
+            <p className='w-full lg:pr-[12vw] text-[10vw] lg:text-[2vw] mt-[2vh] leading-[45px] tracking-tight'>
               {
                 "Elevating the web with a ".split('').map((val, index) => (
                   <span key={index} className='splitted-hero-txt'>{val}</span>
@@ -64,7 +64,7 @@ const Hero = () => {
                 }
               </span>
               {
-                "developer's touch-where cutting edge design meets seamless functionality.".split('').map((val, index) => (
+                "developer's touch.".split('').map((val, index) => (
                   <span key={index} className='splitted-hero-txt'>{val}</span>
                 ))
               }
