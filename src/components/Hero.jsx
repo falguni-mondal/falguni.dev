@@ -45,7 +45,7 @@ const Hero = () => {
         <span className='hero-lighting block w-[30vw] h-[30vw] rounded-full absolute bg-[#27DFB3] blur-[70px] lg:blur-[300px] lg:scale-[0.5] top-[-10vh] left-[50] lg:left-[-2vw] lg:opacity-80 opacity-50'></span>
 
         <div className="hero-main flex flex-col lg:h-auto lg:flex-row-reverse justify-center">
-          <div className='my-img-container w-[35vw] h-[35vw] lg:h-auto flex-shrink-0 lg:flex lg:items-center'>
+          <div className='my-img-container w-[35vw] h-[35vw] mx-auto lg:h-auto flex-shrink-0 lg:flex lg:items-center'>
             <img className='my-img w-full h-full mx-auto lg:w-[15vw] lg:mb-[8vh] object-cover object-center rounded-full shadow-2xl shadow-[rgba(39,223,179,0.15)]' src={falgunimin} alt="" fetchPriority='high' />
           </div>
           <div className="my-info text-center lg:text-left  mt-[1vh] flex flex-col items-center lg:w-[70%] lg:h-full lg:items-start lg:justify-center">

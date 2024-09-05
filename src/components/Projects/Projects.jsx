@@ -19,7 +19,7 @@ const Projects = () => {
 
   useGSAP(() => {
     {
-      ['.project', '.course'].map((elem)=>{
+      ['.project', '.course'].map((elem) => {
         gsap.from(`${elem}`, {
           y: 150,
           opacity: 0.3,
@@ -34,6 +34,20 @@ const Projects = () => {
       })
     }
   })
+  const projectRevealer = () => {
+    gsap.to(".project-img", {
+      scale: 1,
+      opacity: 1,
+      duration: 0.3
+    })
+  }
+  const projectUnRevealer = () => {
+    gsap.to(".project-img", {
+      scale: 0.9,
+      opacity: 0,
+      duration: 0.3
+    })
+  }
 
   return (
     <section id='project-section' className='w-full mt-[10vh] lg:mt-[25vh]'>
@@ -45,7 +59,7 @@ const Projects = () => {
         <ul className='w-full flex flex-col items-center gap-5 mt-8'>
           {
             projects.map((item, index) => (
-              <Project item={item} key={index} />
+              <Project item={item} key={index} projectRevealer={projectRevealer} projectUnRevealer={projectUnRevealer} />
             ))
           }
         </ul>
