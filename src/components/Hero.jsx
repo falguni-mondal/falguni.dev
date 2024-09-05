@@ -38,19 +38,19 @@ const Hero = () => {
   })
 
   return (
-    <section id='hero' className='hero-section pt-[10dvh] lg:pt-0'>
+    <section id='hero' className='hero-section pt-[10dvh] lg:pt-[12dvh]'>
       <div className="hero-container relative w-full flex flex-col items-center">
-        <span className='hero-lighting block w-[30vw] h-[30vw] rounded-full absolute bg-[#27DFB3] blur-[80px] lg:blur-[300px] lg:scale-[0.5] bottom-0 lg:right-0 lg:bottom-[-30vh] opacity-50'></span>
+        <span className='hero-lighting block w-[30vw] h-[30vw] rounded-full absolute bg-[#27DFB3] blur-[80px] lg:blur-[300px] lg:scale-[0.5] bottom-0 lg:right-0 lg:bottom-[-40vh] opacity-50'></span>
 
-        <span className='hero-lighting block w-[30vw] h-[30vw] rounded-full absolute bg-[#27DFB3] blur-[70px] lg:blur-[300px] lg:scale-[0.5] top-[-10vh] left-[50] lg:left-0 lg:top-[10vh] lg:opacity-80 opacity-50'></span>
+        <span className='hero-lighting block w-[30vw] h-[30vw] rounded-full absolute bg-[#27DFB3] blur-[70px] lg:blur-[300px] lg:scale-[0.5] top-[-10vh] left-[50] lg:left-[-2vw] lg:opacity-80 opacity-50'></span>
 
-        <div className="hero-main flex flex-col lg:h-[88vh] lg:flex-row-reverse items-center justify-center">
-          <div className='my-img-container w-[35vw] h-[35vw] lg:h-full flex-shrink-0 lg:flex lg:items-center'>
-            <img className='my-img w-full h-full mx-auto lg:w-[15vw] lg:h-[55%] object-cover object-center rounded-full shadow-2xl shadow-[rgba(39,223,179,0.15)] lg:rounded-[100px_100px_0px_0px]' src={falgunimin} alt="" fetchPriority='high' />
+        <div className="hero-main flex flex-col lg:h-auto lg:flex-row-reverse justify-center">
+          <div className='my-img-container w-[35vw] h-[35vw] lg:h-auto flex-shrink-0 lg:flex lg:items-center'>
+            <img className='my-img w-full h-full mx-auto lg:w-[15vw] lg:mb-[8vh] object-cover object-center rounded-full shadow-2xl shadow-[rgba(39,223,179,0.15)]' src={falgunimin} alt="" fetchPriority='high' />
           </div>
           <div className="my-info text-center lg:text-left  mt-[1vh] flex flex-col items-center lg:w-[70%] lg:h-full lg:items-start lg:justify-center">
             <h1 className='hero-heading splitted-hero-txt text-[8vw] lg:text-[3vw] font-medium'><span>Hi👋, I'm Falguni</span></h1>
-            <p className='w-full lg:pr-[20vw] text-[6.5vw] lg:text-[2vw] mt-[2vh] leading-tight tracking-tight'>
+            <p className='w-full lg:pr-[12vw] text-[6.5vw] lg:text-[2vw] mt-[2vh] leading-tight tracking-tight'>
               {
                 "Elevating the web with a ".split('').map((val, index) => (
                   <span key={index} className='splitted-hero-txt'>{val}</span>

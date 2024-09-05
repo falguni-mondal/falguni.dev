@@ -36,7 +36,7 @@ const Projects = () => {
   })
 
   return (
-    <section id='project-section' className='w-full py-4 mt-[10vh]'>
+    <section id='project-section' className='w-full mt-[10vh] lg:mt-[25vh]'>
       <div className="project-heading">
         <SectionHeading heading={'Projects.'} />
         <span className='project-underline block w-full h-[3px] bg-[#242329] mt-3 relative top-[-1vh]'></span>

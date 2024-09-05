@@ -36,14 +36,14 @@ const About = () => {
     })
 
     return (
-        <section className='about-section mt-[15vh] py-[3vh]'>
+        <section className='about-section mt-[15vh] lg:mt-[25vh] py-[3vh] w-full'>
             <div className="about-heading">
                 <SectionHeading heading={'About Me.'} size={'text-[18vw]'} />
                 <span className='about-underline block w-full h-[3px] bg-zinc-800 relative top-[-1vh]'></span>
             </div>
             <div className='details mt-6'>
-                <p className='inline text-[6vw] text-[#f8f8f8] tracking-tight leading-7'>
-                <span><img className='splitted-about inline w-[8vw] rounded-full mr-3' src={falguni} alt="" /></span>
+                <p className='inline text-[6vw] lg:text-[3vw] text-[#f8f8f8] tracking-tight leading-7 lg:leading-tight'>
+                <span><img className='splitted-about inline w-[8vw] lg:w-[2.9vw] rounded-full mr-3' src={falguni} alt="" /></span>
                     {
                         "Pursuing Bachelor's in Information Technology at Bengal College of Engineering & Technology.".split('').map((val, index) => (
                             <span key={index} className='splitted-about'>{val}</span>
