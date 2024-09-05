@@ -18,7 +18,7 @@ const Hero = () => {
       width: 0,
       duration: 1,
       delay: 1.4,
-      ease: "elastic.out(1,0.5)",
+      ease: "elastic.out(1,0.6)",
     })
     gsap.from('.socials-container', {
       opacity: 0,
@@ -35,9 +35,9 @@ const Hero = () => {
   return (
     <section id='hero' className='hero-section lg:pt-[12dvh]'>
       <div className="hero-container relative w-full h-[88vh] flex flex-col items-center justify-center">
-        <span className='hero-lighting block w-[30vw] h-[30vw] rounded-full absolute bg-[#27DFB3] blur-[80px] lg:blur-[300px] lg:scale-[0.5] bottom-[18vh] lg:right-0 lg:bottom-[-40vh] opacity-50'></span>
+        <span className='hero-lighting block w-[30vw] h-[30vw] rounded-full absolute bg-[#27DFB3] blur-[80px] lg:blur-[300px] lg:scale-[0.5] bottom-[18vh] lg:right-0 lg:bottom-[-40vh] opacity-70'></span>
 
-        <span className='hero-lighting block w-[30vw] h-[30vw] rounded-full absolute bg-[#27DFB3] blur-[70px] lg:blur-[300px] lg:scale-[0.5] top-[-10vh] left-[50] lg:left-[-2vw] lg:opacity-80 opacity-50'></span>
+        <span className='hero-lighting block w-[25vw] h-[25vh] rotate-45 rounded-full absolute bg-[#27DFB3] blur-[80px] lg:blur-[300px] lg:scale-[0.5] top-[-10vh] lg:top-[-10vh] left-[50] lg:left-[-2vw] lg:opacity-80 opacity-[0.45]'></span>
 
         <div className="hero-main flex flex-col lg:h-auto lg:flex-row-reverse justify-center">
           <div className="my-info text-center lg:text-left  mt-[1vh] flex flex-col items-center lg:w-[70%] lg:h-full lg:items-start lg:justify-center">
