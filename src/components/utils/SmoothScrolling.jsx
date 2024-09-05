@@ -11,7 +11,7 @@ function SmoothScrolling({ children }) {
   useEffect(() => {
     lenis.current = new Lenis({
       lerp: 0.1,
-      duration: 1.5,
+      duration: 1.2,
       smooth: true,
       // easing: (x)=> x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2
     });

@@ -23,13 +23,12 @@ const Projects = () => {
         gsap.from(`${elem}`, {
           y: 150,
           opacity: 0.3,
-          duration: 0.7,
           stagger: 0.25,
           scrollTrigger: {
             trigger: `${elem}`,
             start: 'top 100%',
             end: 'top 80%',
-            // scrub: 2
+            scrub: 4,
           }
         })
       })
@@ -37,7 +36,7 @@ const Projects = () => {
   })
 
   return (
-    <section className='w-full py-4 mt-[10vh]'>
+    <section id='project-section' className='w-full py-4 mt-[10vh]'>
       <div className="project-heading">
         <SectionHeading heading={'Projects.'} />
         <span className='project-underline block w-full h-[3px] bg-[#242329] mt-3 relative top-[-1vh]'></span>

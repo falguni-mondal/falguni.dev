@@ -5,7 +5,6 @@
 html {
     /* font-family: "Satoshi", sans-serif !important; */
     font-family: "Poppins", sans-serif;
-    scroll-behavior: auto !important;
     /* color: #242329; */
     /* color: #2e2d35; */
     /* color: #28272e; */
@@ -13,6 +12,7 @@ html {
     /* color: #37353f; */
     /* color: #ebd87e; */
     color: #f8f8f8;
+    scroll-behavior: initial;
   }
   .react-icon, .tailwind-icon, .css-icon, .java-icon{
     text-shadow: 0px 0px 10px rgb(0,255,255);
@@ -57,8 +57,8 @@ html {
     font-family: "Pacifico", cursive !important;
 }
 
-@media (max-width: 500px) {
-    html{
-        scroll-behavior: smooth;
-    }
+@media (max-width: 768px) {
+  html{
+    scroll-behavior: smooth;
+  }
 }

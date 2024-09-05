@@ -24,7 +24,7 @@ const About = () => {
                     duration: 1.5,
                     scrollTrigger:{
                         trigger: `.${elem}`,
-                        start: index===0 ?'top 70%' : 'top 60%',
+                        start: index===0 ?'top 70%' : 'top 80%',
                         end: 'top 50%',
                         ease: 'power4.inOut',
                         // markers: true,
@@ -36,13 +36,13 @@ const About = () => {
     })
 
     return (
-        <section className='about-section mt-[10vh] py-[3vh]'>
+        <section className='about-section mt-[15vh] py-[3vh]'>
             <div className="about-heading">
                 <SectionHeading heading={'About Me.'} size={'text-[18vw]'} />
                 <span className='about-underline block w-full h-[3px] bg-zinc-800 relative top-[-1vh]'></span>
             </div>
             <div className='details mt-6'>
-                <p className='inline leading-[32px] text-[6vw] text-[#f8f8f8] tracking-tight font-medium'>
+                <p className='inline text-[6vw] text-[#f8f8f8] tracking-tight leading-7'>
                 <span><img className='splitted-about inline w-[8vw] rounded-full mr-3' src={falguni} alt="" /></span>
                     {
                         "Pursuing Bachelor's in Information Technology at Bengal College of Engineering & Technology.".split('').map((val, index) => (
@@ -55,7 +55,7 @@ const About = () => {
                             <span key={index} className='splitted-about'>{val}</span>
                         ))
                     }
-                    <a href='#contact' className='inline-flex flex-col splitted-about ml-3 leading-none font-semibold'>Let's connect! <span className='connect-underline h-[2px] bg-[#f8f8f8]'></span></a>
+                    <a href='#contact' className='inline-flex flex-col splitted-about ml-3 leading-none font-medium'>Let's connect! <span className='connect-underline h-[2px] bg-[#f8f8f8]'></span></a>
                 </p>
             </div>
         </section>
