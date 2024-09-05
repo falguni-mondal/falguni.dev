@@ -17,7 +17,7 @@ const Hero = () => {
     gsap.from(".hero-img", {
       width: 0,
       duration: 1,
-      delay: 1.4,
+      delay: 1.55,
       ease: "elastic.out(1,0.6)",
     })
     gsap.from('.socials-container', {

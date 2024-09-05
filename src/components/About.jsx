@@ -36,7 +36,7 @@ const About = () => {
     })
 
     return (
-        <section className='about-section mt-[15vh] lg:mt-[25vh] py-[3vh] w-full'>
+        <section className='about-section lg:mt-[25vh] py-[3vh] w-full'>
             <div className="about-heading">
                 <SectionHeading heading={'About Me.'} size={'text-[18vw]'} />
                 <span className='about-underline block w-full h-[3px] bg-zinc-800 relative top-[-1vh]'></span>
