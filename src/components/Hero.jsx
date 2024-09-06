@@ -22,13 +22,21 @@ const Hero = () => {
     })
     gsap.from('.socials-container', {
       opacity: 0,
+      y: 15,
       duration: 1,
       delay: 1,
     })
     gsap.from('.resume', {
       opacity: 0,
+      y: 15,
       duration: 1,
       delay: 1,
+    })
+    gsap.from('.hand', {
+      rotate: -10,
+      duration: 2.5,
+      delay: 1.7,
+      ease: "elastic.out(8,0.5)",
     })
   })
 
@@ -41,13 +49,13 @@ const Hero = () => {
 
         <div className="hero-main flex flex-col lg:h-auto lg:flex-row-reverse justify-center">
           <div className="my-info text-center lg:text-left  mt-[1vh] flex flex-col items-center lg:w-[70%] lg:h-full lg:items-start lg:justify-center">
-          <h1 className='hero-heading text-[9vw] h-[12vw] overflow-hidden lg:text-[3vw] font-medium flex items-center gap-1'><span className='welcome-txt'>Hi👋, I'm </span><span className='inline-block'><img className=' hero-img w-[13.5vw] h-[8vw] mx-auto lg:w-[15vw] lg:mb-[8vh] object-cover object-center rounded-full shadow-2xl shadow-[rgba(39,223,179,0.15)]' src={falgunimin} alt="" fetchPriority='high' /></span><span className='welcome-txt'> Falguni</span></h1>
+          <h1 className='hero-heading text-[9vw] h-[12vw] overflow-hidden lg:text-[3vw] font-medium flex items-center gap-1'><span className='welcome-txt'>Hi<span className='hand inline-block origin-center'>👋</span>, I'm </span><span className='inline-block'><img className=' hero-img w-[13.5vw] h-[8vw] mx-auto lg:w-[15vw] lg:mb-[8vh] object-cover object-center rounded-full shadow-2xl shadow-[rgba(39,223,179,0.15)]' src={falgunimin} alt="" fetchPriority='high' /></span><span className='welcome-txt'> Falguni</span></h1>
             <p className='w-full lg:pr-[12vw] text-[10vw] lg:text-[2vw] leading-[45px] tracking-tight'>
-              <span className='block h-[11.7vw] overflow-hidden' ><span className='welcome-txt block' >Elevating the web </span></span>
-              <span className='block h-[11.7vw] overflow-hidden' ><span className='welcome-txt block' >with a <span className='text-[#27dfb3]'>frontend</span> </span></span>
-              <span className='block h-[11.7vw] overflow-hidden' ><span className='welcome-txt block' >developer's touch.</span></span>
+              <span className='flex items-start justify-center h-[11.8vw] overflow-hidden' ><span className='welcome-txt block' >Elevating the web </span></span>
+              <span className='flex items-start justify-center h-[11.8vw] overflow-hidden' ><span className='welcome-txt block' >with a <span className='text-[#27dfb3]'>frontend</span> </span></span>
+              <span className='flex items-start justify-center h-[11.8vw] overflow-hidden' ><span className='welcome-txt block' >developer's touch.</span></span>
             </p>
-            <a className='resume bg-[#27dfb3] shadow-2xl shadow-[#27dfb3] py-2 w-[35vw] lg:w-[12vw]  flex justify-center items-center gap-[0.8vmax] rounded-full text-[4.5vw] lg:text-[1.2vw] font-medium text-black mt-[4vh]' href={falguni_mondal_resume} download>Resume <GoDownload /> </a>
+            <a className='resume bg-[#27dfb3] shadow-2xl shadow-[#27dfb3] py-2 w-[35vw] lg:w-[12vw]  flex justify-center items-center gap-[0.8vmax] rounded-full text-[4vw] lg:text-[1.2vw] font-medium text-black mt-[4vh] mb-[15vh] lg:mb-[2vh]' href={falguni_mondal_resume} download>Resume <GoDownload /> </a>
             <Socials />
           </div>
         </div>
