@@ -62,7 +62,7 @@ const About = () => {
                     }
                     <br /><br />
                     {
-                        "With Experience in Web Development, I have developed a strong foundation in Languages like Java, C, and JavaScript. As a creative problem solver and team player, I am eager to connect with other technology professionals and explore new opportunities for growth and development.".split(' ').map((val, index) => (
+                        "With Experience in Web Development, I have developed a strong foundation in tools- like React.js, Tailwind CSS, and Firebase also Languages- like JavaScript, and Java. As a creative problem solver and team player, I am eager to connect with other technology professionals and explore new opportunities for growth and development.".split(' ').map((val, index) => (
                             <span key={index} className='splitted-about'>{`${val} `}</span>
                         ))
                     }
