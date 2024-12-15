@@ -12,8 +12,8 @@ const About = () => {
             stagger: 0.1,
             scrollTrigger: {
                 trigger: '.splitted-about',
-                start: 'top 80%',
-                end: 'top 0%',
+                start: 'top 30%',
+                end: 'top -50%',
                 scrub: 2,
             }
         })
