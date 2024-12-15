@@ -23,18 +23,18 @@ const About = () => {
             scrollTrigger: {
                 trigger: '.falguni_img',
                 start: 'top 60%',
-                end: 'top 20%',
-                scrub: 2,
+                end: 'top 0%',
+                scrub: 1,
             }
         })
         {
-            ['about-underline', 'connect-underline', 'project-underline', 'skill-underline', 'certify-underline'].map((elem, index) => {
+            ['about-underline', 'connect-underline', 'project-underline', 'skill-underline', 'certify-underline'].map((elem) => {
                 gsap.from(`.${elem}`,{
                     width: 0,
                     duration: 1.5,
                     scrollTrigger:{
                         trigger: `.${elem}`,
-                        start: index===0 ?'top 70%' : 'top 80%',
+                        start: 'top 70%',
                         end: 'top 50%',
                         ease: 'power4.inOut',
                         // markers: true,

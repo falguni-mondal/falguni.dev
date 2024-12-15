@@ -36,8 +36,8 @@ const Projects = () => {
           stagger: 0.25,
           scrollTrigger: {
             trigger: `${elem}`,
-            start: 'top 100%',
-            end: 'top 80%',
+            start: 'top 65%',
+            end: 'top 50%',
             scrub: 4,
           }
         })

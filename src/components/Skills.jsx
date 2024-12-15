@@ -43,8 +43,8 @@ const Skills = () => {
           scale: 0.5,
           scrollTrigger: {
             trigger: item,
-            start: "top 70%",
-            end: "top 60%",
+            start: "top 50%",
+            end: "top 40%",
             ease: "power4.inOut",
           },
         });
