@@ -27,7 +27,7 @@ const Certificates = () => {
     }
   ]
   return (
-    <section className='cert-section w-full py-[3vh] mt-[15vh]'>
+    <section id='cert-section' className='cert-section w-full py-[3vh] mt-[15vh]'>
       <div className="certify-heading mb-[3vh]">
         <SectionHeading heading={'Courses.'} size={'text-[18vw]'} />
         <span className='certify-underline block w-full h-[3px] bg-zinc-800 relative top-[-1vh]'></span>

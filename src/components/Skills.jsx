@@ -64,7 +64,7 @@ const Skills = () => {
     }
   });
   return (
-    <section className="skills-section w-full mt-[15vh]">
+    <section id="skill-section" className="skills-section w-full mt-[15vh]">
       <div className="skill-heading">
         <SectionHeading heading={"Skills."} size={"text-[20vw]"} />
         <span className="skill-underline block w-full h-[3px] bg-[#242329] relative top-[-1vh]"></span>

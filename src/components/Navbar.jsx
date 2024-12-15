@@ -40,9 +40,9 @@ const Navbar = () => {
                 <ul className='hidden lg:flex gap-[3vw] text-[1vw] font-[200] mr-[3vw]'>
                     <li><a className='underline underline-offset-4' href='https://www.linkedin.com/in/falguni-mondal/' target='_blank'>Linkedin</a></li>
                     <li><a className='underline underline-offset-4' href='https://github.com/falguni-mondal' target='_blank'>Github</a></li>
-                    <li className='cursor-pointer'><a href='#projects'>Projects</a></li>
-                    <li className='cursor-pointer'><a href='#skills'>Skills</a></li>
-                    <li className='cursor-pointer'><a href='#courses'>Courses</a></li>
+                    <li className='cursor-pointer'><a href='#project-section'>Projects</a></li>
+                    <li className='cursor-pointer'><a href='#skill-section'>Skills</a></li>
+                    <li className='cursor-pointer'><a href='#cert-section'>Courses</a></li>
                 </ul>
             <a className='nav-btn bg-[#27DFB3] shadow-2xl shadow-[#27DFB3] py-[0.5vh] lg:py-[0.8vh] px-3 lg:px-[0.8vw] rounded-sm text-[3.5vw] lg:text-[1vw] font-medium lg:font-light text-black' href="mailto:career.falguni@gmail.com">Let's Talk.</a>
             </nav>

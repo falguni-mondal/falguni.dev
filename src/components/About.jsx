@@ -17,6 +17,16 @@ const About = () => {
                 scrub: 2,
             }
         })
+        gsap.from(".falguni_img", {
+            opacity: 0,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: '.falguni_img',
+                start: 'top 60%',
+                end: 'top 20%',
+                scrub: 2,
+            }
+        })
         {
             ['about-underline', 'connect-underline', 'project-underline', 'skill-underline', 'certify-underline'].map((elem, index) => {
                 gsap.from(`.${elem}`,{
@@ -42,6 +52,7 @@ const About = () => {
                 <span className='about-underline block w-full h-[3px] bg-zinc-800 relative top-[-1vh]'></span>
             </div>
             <div className='details mt-6'>
+                <img className='falguni_img lg:h-[200px] mb-5' src={falguni} alt="falguni_mondal" />
                 <p className='inline text-[6vw] lg:text-[3vw] text-[#f8f8f8] tracking-tight leading-7 lg:leading-tight'>
                 <span className='lg:hidden'><img className='splitted-about inline w-[8vw] lg:w-[2.9vw] rounded-full mr-3' src={falguni} alt="" /></span>
                     {
