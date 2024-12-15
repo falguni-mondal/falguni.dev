@@ -54,7 +54,6 @@ const About = () => {
             <div className='details mt-6'>
                 <img className='falguni_img lg:h-[200px] mb-5' src={falguni} alt="falguni_mondal" />
                 <p className='inline text-[6vw] lg:text-[3vw] text-[#f8f8f8] tracking-tight leading-7 lg:leading-tight'>
-                <span className='lg:hidden'><img className='splitted-about inline w-[8vw] lg:w-[2.9vw] rounded-full mr-3' src={falguni} alt="" /></span>
                     {
                         "Pursuing Bachelor's in Information Technology at Bengal College of Engineering & Technology.".split(' ').map((val, index) => (
                             <span key={index} className='splitted-about'>{`${val} `}</span>
