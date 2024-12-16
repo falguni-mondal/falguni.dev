@@ -26,6 +26,7 @@ const Projects = () => {
       category: 'Web Design • Frontend Development'
     }
   ]
+  const screen = window.innerWidth;
 
   useGSAP(() => {
     {
@@ -36,9 +37,9 @@ const Projects = () => {
           stagger: 0.25,
           scrollTrigger: {
             trigger: `${elem}`,
-            start: 'top 55%',
-            end: 'top 45%',
-            scrub: 4,
+            start: `${screen > 1024 ? "top: 90%" : "top: 45%"}`,
+            end: `${screen > 1024 ? "top: 75%" : "top: 30%"}`,
+            scrub: 3,
           }
         })
       })

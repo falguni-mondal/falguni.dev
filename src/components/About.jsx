@@ -6,25 +6,27 @@ import gsap from 'gsap';
 
 const About = () => {
 
+    const screen = window.innerWidth;
+
     useGSAP(() => {
         gsap.from(".splitted-about", {
             opacity: 0.1,
             stagger: 0.1,
             scrollTrigger: {
                 trigger: '.splitted-about',
-                start: 'top 30%',
-                end: 'top -50%',
+                start: `${screen > 1024 ? "top 60%"  : "top 30%"}`,
+                end: `${screen > 1024 ? "top -20%"  : "top -50%"}`,
                 scrub: 2,
             }
         })
         gsap.from(".falguni_img", {
             opacity: 0,
-            stagger: 0.1,
+            scale: 0.95,
+            duration: 0.8,
             scrollTrigger: {
                 trigger: '.falguni_img',
                 start: 'top 60%',
                 end: 'top 0%',
-                scrub: 1,
             }
         })
         {
@@ -61,7 +63,7 @@ const About = () => {
                     }
                     <br /><br />
                     {
-                        "With Experience in Web Development, I have developed a strong foundation in tools- like React.js, Tailwind CSS, and Firebase also Languages- like JavaScript, and Java. As a creative problem solver and team player, I am eager to connect with other technology professionals and explore new opportunities for growth and development.".split(' ').map((val, index) => (
+                        "With Experience in Web Development, I have developed a strong foundation in Tools- like React.js, Tailwind CSS, Firebase, and Languages- like JavaScript, Java. As a creative problem solver and team player, I am eager to connect with other technology professionals and explore new opportunities for growth and development.".split(' ').map((val, index) => (
                             <span key={index} className='splitted-about'>{`${val} `}</span>
                         ))
                     }

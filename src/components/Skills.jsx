@@ -12,6 +12,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const Skills = () => {
+  const screen = window.innerWidth;
   const skills = [
     "React.js",
     "Redux Toolkit",
@@ -43,8 +44,8 @@ const Skills = () => {
           scale: 0.5,
           scrollTrigger: {
             trigger: item,
-            start: "top 50%",
-            end: "top 40%",
+            start: `${screen > 1024 ? "top 50%" : "top 40%"}`,
+            end: `${screen > 1024 ? "top 40%" : "top 30%"}`,
             ease: "power4.inOut",
           },
         });
@@ -55,8 +56,8 @@ const Skills = () => {
           opacity: 0.1,
           scrollTrigger: {
             trigger: `#${item.slice(0, 5)}`,
-            start: "top 69%",
-            end: "top 59%",
+            start: `${screen > 1024 ? "top 47.6%" : "top 38.5%"}`,
+            end: `${screen > 1024 ? "top 37.6%" : "top 28.5%"}`,
             ease: "power4.inOut",
           },
         });
@@ -74,7 +75,7 @@ const Skills = () => {
           {skills.map((item, index) => (
             <li
               key={index}
-              className={`w-[95%] lg:text-[3.5vw] text-[7vw] font-semibold tracking-tighter flex justify-between items-center text-[#f8f8f8]`}
+              className={`w-[95%] lg:text-[3.2vw] text-[7vw] font-semibold tracking-tighter flex justify-between items-center text-[#f8f8f8]`}
             >
               <span id={`${item.slice(0, 5)}`}>{item}</span>
               {index === 0 && (
