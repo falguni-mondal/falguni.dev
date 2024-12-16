@@ -36,8 +36,8 @@ const About = () => {
                     duration: 1.5,
                     scrollTrigger:{
                         trigger: `.${elem}`,
-                        start: 'top 70%',
-                        end: 'top 50%',
+                        start: "top 70%",
+                        end: "top 30%",
                         ease: 'power4.inOut',
                         // markers: true,
                     }
@@ -63,11 +63,11 @@ const About = () => {
                     }
                     <br /><br />
                     {
-                        "With Experience in Web Development, I have developed a strong foundation in Tools- like React.js, Tailwind CSS, Firebase, and Languages- like JavaScript, Java. As a creative problem solver and team player, I am eager to connect with other technology professionals and explore new opportunities for growth and development.".split(' ').map((val, index) => (
+                        "I am a web developer experienced in React (Vite), Redux Toolkit, Tailwind CSS, Firebase, and GSAP. I specialize in creating modern, and interactive websites with animations. As a creative Problem Solver and Team Player, I am eager to connect with other technology professionals and explore new opportunities for growth and development.".split(' ').map((val, index) => (
                             <span key={index} className='splitted-about'>{`${val} `}</span>
                         ))
                     }
-                    <a href='#contact' className='w-fit inline-flex flex-col splitted-about ml-3 leading-none font-medium'>Let's connect! <span className='connect-underline inline-block w-full h-[2px] bg-[#f8f8f8]'></span></a>
+                    <a href='#contact' className='w-fit inline-flex flex-col splitted-about ml-3 leading-none font-medium text-[6vw] lg:text-[3vw]'>Let's connect! <span className='connect-underline inline-block w-full h-[2px] bg-[#f8f8f8]'></span></a>
                 </p>
             </div>
         </section>

@@ -15,30 +15,18 @@ const Hero = () => {
       stagger: 0.1,
       delay: 1
     })
-    // gsap.from(".hero-img", {
-    //   width: 0,
-    //   duration: 1.2,
-    //   delay: 1.7,
-    //   ease: "elastic.out(1,0.6)",
-    // })
     gsap.from('.socials-container', {
       opacity: 0,
-      y: 15,
+      y: 20,
       duration: 1,
-      delay: 1,
+      delay: 1.2,
     })
     gsap.from('.resume', {
       opacity: 0,
-      y: 15,
+      y: 20,
       duration: 1,
       delay: 1.3,
     })
-    // gsap.from('.hand', {
-    //   rotate: -10,
-    //   duration: 2.5,
-    //   delay: 1.7,
-    //   ease: "elastic.out(5,0.5)",
-    // })
   })
 
   return (

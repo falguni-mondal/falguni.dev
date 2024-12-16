@@ -40,7 +40,7 @@ const Contact = () => {
         <form ref={form} onSubmit={(e) => formHandler(e)} className='w-full lg:w-2/3 flex flex-col gap-8' name='contact'>
           <input ref={email} name='from_email' className='w-full outline-none py-2 lg:py-4 bg-transparent border-b-2 border-[#f8f8f8] placeholder:text-[#f8f8f8] text-[0.9rem] lg:text-[1.2rem]' placeholder='Your email' type="email" required/>
           <textarea ref={message} name='message' className='w-full text-[0.9rem] lg:text-[1.2rem] outline-none bg-transparent border-b-2 border-[#f8f8f8] placeholder:text-[#f8f8f8]' placeholder='Message' rows={8} id="connnect-message" required></textarea>
-          <button type='submit' value="send" className='text-[#242329] bg-[#27DFB3] font-medium py-2.5 lg:py-4 w-[45vw] lg:w-[30ch] rounded-full lg:rounded'>Send Message</button>
+          <button type='submit' value="send" className='text-zinc-900 bg-[#27DFB3] font-medium xl:font-semibold py-2.5 lg:py-4 w-[45vw] lg:w-[30ch] rounded-full lg:rounded'>Send Message</button>
         </form>
         <span className={`fixed top-10 left-[50%] -translate-x-[50%] z-50 sendMsg inline-flex items-center gap-1 text-[4.5vw] px-6 py-2 rounded-md ${visible ? 'scale-100' : 'scale-0'} transition-all`}>
           <VscVerifiedFilled className='text-[#27DFB3]' /> Sent

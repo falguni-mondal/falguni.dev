@@ -10,7 +10,7 @@ const Project = (props) => {
 
 
   return (
-    <li onMouseEnter={() => screen >= 1024 && projectRevealer(`.${name.split(" ").join("")}`)} onMouseLeave={() => screen >= 1024 && projectUnRevealer(`.${name.split(" ").join("")}`)} className='project relative w-full flex flex-col justify-center pb-5 pt-10 lg:pb-10 border-b border-zinc-700'>
+    <li onMouseEnter={() => screen >= 1024 && projectRevealer(`.${name.split(" ").join("")}`)} onMouseLeave={() => screen >= 1024 && projectUnRevealer(`.${name.split(" ").join("")}`)} className='project relative w-full flex flex-col justify-center pb-5 pt-10 lg:pb-10 lg:border-b border-zinc-700'>
       <a href={link} target='_blank'>
         <img className={`${name.split(" ").join("")} ${name === "Kickster" && "opacity-80"} w-full h-[230px] lg:h-[170px] xl:h-[190px] 2xl:h-[250px] lg:w-[20vw] lg:scale-90 lg:opacity-0 rounded-xl object-cover lg:absolute lg:top-[5%] lg:left-[60%]`} src={img} alt="Obys Agency" />
       </a>

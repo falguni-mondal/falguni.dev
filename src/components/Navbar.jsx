@@ -7,26 +7,8 @@ const Navbar = () => {
         gsap.from(".main-header", {
             top: '-10vh',
             duration: 1,
-            delay: 1.3
+            delay: 1
         })
-        // gsap.to(".main-header", {
-        //     background: "rgba(0,0,0,0.2)",
-        //     scrollTrigger: {
-        //         trigger: '.main-header',
-        //         start: 'top -90%',
-        //         end: 'top -100%',
-        //         scrub: true,
-        //     }
-        // })
-        // gsap.from(".nav-btn", {
-        //     opacity: 0,
-        //     scrollTrigger:{
-        //         trigger: '.nav-btn',
-        //         start: 'top -90%',
-        //         end: 'top -100%',
-        //         scrub: true,
-        //     }
-        // })
     })
     return (
         <header className='main-header fixed px-[5vw] h-[8vh] lg:h-[12vh] flex justify-between items-center z-10 w-full max-w-screen-2xl left-[50%] -translate-x-[50%] top-0 backdrop-blur-sm lg:backdrop-blur-[6px]'>

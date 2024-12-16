@@ -64,7 +64,7 @@ const Projects = () => {
     <section id='project-section' className='w-full mt-[10vh] lg:mt-[25vh]'>
       <div className="project-heading">
         <SectionHeading heading={'Projects.'} />
-        <span className='project-underline block w-full h-[0.3vmin] bg-[#242329] mt-2'></span>
+        <span className='project-underline block w-full h-[3px] bg-[#242329] mt-2'></span>
       </div>
       <div className="project-container w-full">
         <ul className='w-full flex flex-col items-center mt-8'>

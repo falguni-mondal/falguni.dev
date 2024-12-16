@@ -44,8 +44,8 @@ const Skills = () => {
           scale: 0.5,
           scrollTrigger: {
             trigger: item,
-            start: `${screen > 1024 ? "top 50%" : "top 40%"}`,
-            end: `${screen > 1024 ? "top 40%" : "top 30%"}`,
+            start: `${screen >= 1024 ? "top 60%" : "top 40%"}`,
+            end: `${screen >= 1024 ? "top 60%" : "top 40%"}`,
             ease: "power4.inOut",
           },
         });
@@ -56,16 +56,17 @@ const Skills = () => {
           opacity: 0.1,
           scrollTrigger: {
             trigger: `#${item.slice(0, 5)}`,
-            start: `${screen > 1024 ? "top 47.6%" : "top 38.5%"}`,
-            end: `${screen > 1024 ? "top 37.6%" : "top 28.5%"}`,
+            start: `${screen >= 1024 ? "top 57.6%" : "top 38.5%"}`,
+            end: `${screen >= 1024 ? "top 57.6%" : "top 38.5%"}`,
             ease: "power4.inOut",
           },
         });
       });
     }
   });
+  
   return (
-    <section id="skill-section" className="skills-section w-full mt-[15vh]">
+    <section id="skill-section" className="skills-section w-full mt-[15vh] lg:mt-[20vh]">
       <div className="skill-heading">
         <SectionHeading heading={"Skills."} size={"text-[20vw]"} />
         <span className="skill-underline block w-full h-[3px] bg-[#242329] relative top-[-1vh]"></span>

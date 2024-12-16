@@ -26,6 +26,8 @@ const Certificates = () => {
       link: 'https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS85S73510002320132645'
     }
   ]
+
+  
   return (
     <section id='cert-section' className='cert-section w-full py-[3vh] mt-[15vh]'>
       <div className="certify-heading mb-[3vh]">
