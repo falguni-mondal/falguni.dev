@@ -12,7 +12,7 @@ const Certificates = () => {
       link: 'https://drive.google.com/file/d/1n-qO4YB_S3RTL0h7JSawSuwl65GOYdQr/view?usp=drivesdk'
     },
     {
-      name: 'Javascript for Begginers',
+      name: 'Javascript for Beginners',
       platform: 'Simplilearn',
       skills: 'JavaScript',
       year: '2023',
