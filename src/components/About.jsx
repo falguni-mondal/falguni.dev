@@ -21,8 +21,8 @@ const About = () => {
         })
         gsap.from(".falguni_img", {
             opacity: 0,
-            scale: 0.95,
-            duration: 0.8,
+            y: 15,
+            duration: 1,
             scrollTrigger: {
                 trigger: '.falguni_img',
                 start: 'top 60%',

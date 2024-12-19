@@ -10,7 +10,7 @@ const Projects = () => {
     {
       img: 'https://i.postimg.cc/s2xzGR9g/kickster.png',
       name: 'Kickster',
-      tools: "React(Vite) • Redux Toolkit • Tailwind CSS • Firebase • React Router • GSAP  • RazorPay",
+      tools: "React(Vite) • Redux Toolkit • Tailwind CSS • Firebase • GSAP  • RazorPay",
       year: '2024',
       link: 'https://kickstershoes.netlify.app',
       github: "https://github.com/falguni-mondal/Kickster",
@@ -19,7 +19,7 @@ const Projects = () => {
     {
       img: 'https://i.postimg.cc/NM0t6GYX/Obys-Agency.jpg',
       name: 'Obys Agency Clone',
-      tools: "JavaScript • CSS • HTML",
+      tools: "JavaScript • CSS • HTML • GSAP",
       year: '2023',
       link: 'https://falguni-mondal.github.io/Obys-Agency/',
       github: "https://github.com/falguni-mondal/Obys-Agency",
