@@ -13,8 +13,8 @@ const App = () => {
 
   return (
     <div className='main-container w-[100%] relative min-h-screen bg-zinc-950 flex flex-col items-center overflow-x-hidden'>
-      <div className="container relative mx-auto max-w-screen-2xl 2xl:px-0 lg:px-[10vw] px-5">
         <Navbar />
+      <div className="container relative mx-auto max-w-screen-2xl 2xl:px-0 lg:px-[10vw] px-5">
         <Hero />
         <About />
         <Projects />
