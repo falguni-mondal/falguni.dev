@@ -19,8 +19,8 @@ const Project = (props) => {
           <h3><a className='flex items-center gap-1' href={link} target='_blank'>{name} <IoIosLink className='text-[5vw] lg:text-[2vw]' /></a></h3>
           <a href={github} target='_blank'><FaGithub className='text-[5vw] lg:text-[2vw]' /></a>
         </div>
-        <div className='flex justify-between mb-1 lg:mb-[5vh]'>
-          <span className='text-[2.8vw] lg:text-[1.3vw] opacity-50'>{category}</span>
+        <div className='flex w-full justify-between mb-1 lg:mb-[5vh]'>
+          <span className='text-[2.8vw] lg:text-[1.3vw] opacity-50 max-w-[75%] lg:max-w-[50%]'>{category}</span>
           <span className='text-[4vw] lg:text-[1.2vw]'>{year}</span>
         </div>
         <span className='project-tools inline-block px-5 py-1.5 rounded-full text-[2.5vw] lg:text-[1vw] border opacity-50'>{tools}</span>

@@ -14,29 +14,37 @@ html {
     color: #E9E9E9;
     scroll-behavior: initial;
   }
-  .react-icon, .tailwind-icon, .css-icon, .java-icon{
+  .blue{
     text-shadow: 0px 0px 10px rgb(0,255,255);
     filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.8));
   }
-  .js-icon, .firebase-icon{
-    text-shadow: 0px 0px 10px rgb(251,191,24);
-    filter: drop-shadow(0px 0px 20px rgba(251, 191, 24, 0.8));
+  .yellow{
+    text-shadow: 0px 0px 10px rgb(235, 178, 23);
+    filter: drop-shadow(0px 0px 20px rgba(235, 178, 23, 0.8));
   }
-  /* .java-icon{
+  /* .java{
     text-shadow: 0px 0px 10px white;
     filter: drop-shadow(0px 0px 20px white);
   } */
-  .ds-icon, .redux-icon{
+  .purple{
     text-shadow: 0px 0px 10px rgb(79, 63, 255);
     filter: drop-shadow(0px 0px 20px rgba(69, 53, 255, 0.8));
   }
-  .gsap-icon{
-    text-shadow: 0px 0px 10px rgb(81, 252, 14);
-    filter: drop-shadow(0px 0px 20px rgba(81, 252, 14, 0.8));
+  .green{
+    text-shadow: 0px 0px 10px rgb(44, 150, 42);
+    filter: drop-shadow(0px 0px 20px rgba(4, 255, 0, 0.8));
   }
-  .html-icon{
+  .deep-green{
+    text-shadow: 0px 0px 10px rgb(0, 255, 85);
+    filter: drop-shadow(0px 0px 20px rgba(0, 255, 106, 0.8));
+  }
+  .orange{
     text-shadow: 0px 0px 10px rgb(202, 127, 56);
     filter: drop-shadow(0px 0px 20px rgba(202, 127, 56, 0.8));
+  }
+  .white{
+    text-shadow: 0px 0px 10px rgb(238, 238, 238);
+    filter: drop-shadow(0px 0px 20px rgba(238, 238, 238, 0.8));
   }
   .socials{
     text-shadow: 0px 0px 10px white;

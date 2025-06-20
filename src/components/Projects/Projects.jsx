@@ -8,13 +8,22 @@ import gsap from 'gsap'
 const Projects = () => {
   const projects = [
     {
-      img: 'https://i.postimg.cc/s2xzGR9g/kickster.png',
+      img: 'https://i.ibb.co/B2PdC35H/Stegx-2.png',
+      name: 'Stegx',
+      tools: "React(Vite) • Tailwind CSS • Node.js • Express.js • Multer • Jimp",
+      year: '2025',
+      link: 'https://stegx.netlify.app',
+      github: "https://github.com/falguni-mondal/Stegx",
+      category: 'Web Development • Fullstack Development • Image Processing • Data Security'
+    },
+    {
+      img: 'https://i.ibb.co/F4cd72KG/kickster2.png',
       name: 'Kickster',
-      tools: "React(Vite) • Redux Toolkit • Tailwind CSS • Firebase • GSAP  • RazorPay",
+      tools: "React(Vite) • Redux Toolkit • Tailwind CSS • Firebase • GSAP",
       year: '2024',
       link: 'https://kickstershoes.netlify.app',
       github: "https://github.com/falguni-mondal/Kickster",
-      category: 'Web Development • Frontend Development'
+      category: 'Web Development • Frontend Development • E-commerce'
     },
     {
       img: 'https://i.postimg.cc/NM0t6GYX/Obys-Agency.jpg',
@@ -27,6 +36,12 @@ const Projects = () => {
     }
   ]
   const screen = window.innerWidth;
+
+{/* <img src="https://i.ibb.co/nMShC7kr/Stegx.png" alt="Stegx" border="0"> */}
+{/* <img src="https://i.ibb.co/B2PdC35H/Stegx-2.png" alt="Stegx-2" border="0"></img> */}
+{/* <img src="https://i.ibb.co/F4cd72KG/kickster2.png" alt="kickster2" border="0"> */}
+{/* <img src="https://i.ibb.co/VWFHMwLf/kickster.png" alt="kickster" border="0"></img> */}
+
 
   useGSAP(() => {
     {
