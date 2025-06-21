@@ -151,7 +151,7 @@ const Skills = () => {
               className={`w-[95%] lg:text-[3.2vw] text-[7vw] font-semibold tracking-tighter flex justify-between items-center text-[#f8f8f8]`}
             >
               <span id={`${id}-txt`}>{title}</span>
-              <span className={`${color} text-[2.5rem] lg:text-[3.2rem] ${shadow}`} id={`${id}-icon`}><Icon/></span>
+              <span className={`${color} ${index <= 6 ? "text-[2.2rem] lg:text-[3rem]" : "text-[2.5rem] lg:text-[3.2rem]"} ${shadow}`} id={`${id}-icon`}><Icon/></span>
             </li>
           ))}
         </ul>
