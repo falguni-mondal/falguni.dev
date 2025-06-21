@@ -29,6 +29,8 @@ const Contact = ({ setVisible, setProcessing, setSuccess, processing, visible })
 
     if (response.data.success) {
       setSuccess(true);
+      emailRef.current.value = "";
+      messageRef.current.value = "";
       setTimeout(() => {
         setVisible(false);
       }, 3000);
