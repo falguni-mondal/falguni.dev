@@ -14,8 +14,8 @@ const About = () => {
             stagger: 0.1,
             scrollTrigger: {
                 trigger: '.splitted-about',
-                start: `${screen > 1024 ? "top 60%"  : "top 30%"}`,
-                end: `${screen > 1024 ? "top -20%"  : "top -50%"}`,
+                start: `${screen > 1024 ? "top 60%"  : "top 80%"}`,
+                end: `${screen > 1024 ? "top -20%"  : "top -20%"}`,
                 scrub: 2,
             }
         })
@@ -36,8 +36,8 @@ const About = () => {
                     duration: 1.5,
                     scrollTrigger:{
                         trigger: `.${elem}`,
-                        start: "top 70%",
-                        end: "top 30%",
+                        start: `${screen > 1024 ? "top 70%"  : "top 60%"}`,
+                        end: `${screen > 1024 ? "top 30%"  : "top 0%"}`,
                         ease: 'power4.inOut',
                         // markers: true,
                     }
@@ -49,12 +49,7 @@ const About = () => {
 
     return (
         <section className='about-section lg:mt-[15vmin] py-[3vh] w-full'>
-            <div className="about-heading">
-                <SectionHeading heading={'About Me.'} size={'text-[18vw]'} />
-                <span className='about-underline block w-full h-[3px] bg-zinc-800 relative top-[-1vh]'></span>
-            </div>
             <div className='details mt-6'>
-                <img className='falguni_img lg:h-[200px] mb-5' src={falguni} alt="falguni_mondal" />
                 <p className='inline text-[6vw] lg:text-[3vw] text-[#f8f8f8] tracking-tight leading-7 lg:leading-tight'>
                     {
                         "Pursuing Bachelor's in Information Technology at Bengal College of Engineering & Technology.".split(' ').map((val, index) => (

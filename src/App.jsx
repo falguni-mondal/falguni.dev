@@ -22,7 +22,7 @@ const App = () => {
   return (
     <div className='main-container w-[100%] relative min-h-screen bg-zinc-950 flex flex-col items-center overflow-x-hidden'>
       <Navbar />
-      <div className="container relative mx-auto max-w-screen-2xl 2xl:px-0 lg:px-[10vw] px-5">
+      <div className="container relative mx-auto w-full max-w-screen-xl 2xl:px-0 lg:px-[10vw] px-5">
         <div className={`status-container ${visible ? "scale-100" : "scale-0"} transition-all duration-500 fixed w-full top-[50px] lg:top-[60px] left-0 z-[100] flex justify-center items-center`}>
           <div className="status-bg px-3 py-1.5 rounded-full bg-[#ffffff15] backdrop-blur-sm w-fit flex justify-center items-center gap-1">
             {

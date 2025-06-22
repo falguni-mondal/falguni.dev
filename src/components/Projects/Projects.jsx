@@ -52,8 +52,8 @@ const Projects = () => {
           stagger: 0.25,
           scrollTrigger: {
             trigger: `${elem}`,
-            start: `${screen > 1024 ? "top: 90%" : "top: 45%"}`,
-            end: `${screen > 1024 ? "top: 75%" : "top: 30%"}`,
+            start: `${screen > 1024 ? "top: 90%" : "top: 65%"}`,
+            end: `${screen > 1024 ? "top: 75%" : "top: 50%"}`,
             scrub: 3,
           }
         })

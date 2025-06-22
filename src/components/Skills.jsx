@@ -116,8 +116,8 @@ const Skills = () => {
           scale: 0.5,
           scrollTrigger: {
             trigger: item,
-            start: `${screen >= 1024 ? "top 60%" : "top 40%"}`,
-            end: `${screen >= 1024 ? "top 60%" : "top 40%"}`,
+            start: `${screen >= 1024 ? "top 60%" : "top 55%"}`,
+            end: `${screen >= 1024 ? "top 60%" : "top 55%"}`,
             ease: "power4.inOut",
           },
         });
@@ -128,8 +128,8 @@ const Skills = () => {
           opacity: 0.1,
           scrollTrigger: {
             trigger: `#${item.id}-txt`,
-            start: `${screen >= 1024 ? "top 57.6%" : "top 38.5%"}`,
-            end: `${screen >= 1024 ? "top 57.6%" : "top 38.5%"}`,
+            start: `${screen >= 1024 ? "top 57.6%" : "top 53.5%"}`,
+            end: `${screen >= 1024 ? "top 57.6%" : "top 53.5%"}`,
             ease: "power4.inOut",
           },
         });
@@ -148,7 +148,7 @@ const Skills = () => {
           {skills.map(({title, icon : Icon, color, shadow, id}, index) => (
             <li
               key={index}
-              className={`w-[95%] lg:text-[3.2vw] text-[7vw] font-semibold tracking-tighter flex justify-between items-center text-[#f8f8f8]`}
+              className={`w-full lg:text-[3.2vw] text-[7vw] font-semibold tracking-tighter flex justify-between items-center text-[#f8f8f8]`}
             >
               <span id={`${id}-txt`}>{title}</span>
               <span className={`${color} ${index <= 6 ? "text-[2.2rem] lg:text-[3rem]" : "text-[2.5rem] lg:text-[3.2rem]"} ${shadow}`} id={`${id}-icon`}><Icon/></span>
