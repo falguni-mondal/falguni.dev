@@ -12,8 +12,9 @@ const Navbar = () => {
             duration: 1,
             delay: 1
         })
-        gsap.to(".connect-btn", {
-            opacity: 1,
+        gsap.from(".connect-btn", {
+            y: "-5vmax",
+            opacity: 0,
             duration: 0.5,
             scrollTrigger: {
                 trigger: ".connect-btn",
@@ -49,7 +50,7 @@ const Navbar = () => {
                     <li className='cursor-pointer'><a href='#skill-section'>Skills</a></li>
                     <li className='cursor-pointer'><a href='#cert-section'>Courses</a></li>
                 </ul>
-                <a className='connect-btn opacity-0 bg-[#20c59f] shadow-2xl shadow-[#27DFB3] py-[0.5vh] lg:py-[0.9vh] px-3 lg:px-[0.8vw] rounded text-[3.5vw] lg:text-[1vw] font-medium text-black' href="#contact">Let's Talk.</a>
+                <a className='connect-btn bg-[#0ed8a9] shadow-2xl shadow-[#27DFB3] py-[0.5vh] lg:py-[0.9vh] px-3 lg:px-[0.8vw] rounded text-[3.5vw] lg:text-[1vw] font-medium text-black' href="#contact">Let's Talk.</a>
             </nav>
         </header>
     )

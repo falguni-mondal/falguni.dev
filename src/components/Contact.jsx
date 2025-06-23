@@ -52,7 +52,7 @@ const Contact = ({ setVisible, setProcessing, setSuccess, processing, visible })
         <form ref={form} onSubmit={(e) => formHandler(e)} className='w-full lg:w-2/3 flex flex-col gap-8' name='contact'>
           <input ref={emailRef} name='email' className='w-full outline-none py-2 lg:py-4 bg-transparent border-b-2 border-[#f8f8f8] placeholder:text-[#f8f8f8] text-[0.9rem] lg:text-[1.2rem]' placeholder='Your email' type="email" required />
           <textarea ref={messageRef} name='message' className='w-full resize-none text-[0.9rem] lg:text-[1.2rem] outline-none bg-transparent border-b-2 border-[#f8f8f8] placeholder:text-[#f8f8f8]' placeholder='Message' rows={8} id="connnect-message" required></textarea>
-          <button type='submit' value="send" className='text-zinc-900 bg-[#27DFB3] font-medium xl:font-semibold py-2.5 lg:py-4 w-[45vw] lg:w-[30ch] rounded-full lg:rounded'>Send Message</button>
+          <button type='submit' value="send" className='text-zinc-900 bg-[#0ed8a9] font-medium xl:font-semibold py-2.5 lg:py-4 w-[45vw] lg:w-[30ch] rounded-full lg:rounded'>Send Message</button>
         </form>
         <div className="contact-dets-sontainer lg:w-1/3 flex flex-col gap-8">
           <div className='contact-dets flex flex-col'>

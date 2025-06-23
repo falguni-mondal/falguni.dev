@@ -109,9 +109,9 @@ const Hero = () => {
 
 
             <div className="buttons flex gap-2 mb-[10vh] lg:mb-[2vh] mt-[4vh]">
-              <a className='resume bg-[#b8b8b8] shadow-2xl shadow-[#ffffff] py-[0.55rem] px-[3rem] flex justify-center items-center gap-[0.8vmax] rounded-md text-[1.45rem] font-medium text-black font-mango leading-none tracking-wider' href="#contact" >Connect</a>
+              <a className='resume bg-[#cecece] shadow-2xl shadow-[#ffffff] py-[0.55rem] px-[3rem] flex justify-center items-center gap-[0.8vmax] rounded-md text-[1.45rem] font-medium text-black font-mango leading-none tracking-wider' href="#contact" >Connect</a>
 
-              <a className='resume bg-[#19a182] shadow-2xl shadow-[#27dfb3] py-[0.55rem] px-[3rem] flex justify-center items-center gap-[0.8vmax] rounded-md text-[1.45rem] font-medium text-black font-mango leading-none tracking-wider' href={falguni_mondal_resume} download>Resume</a>
+              <a className='resume bg-[#0ed8a9] shadow-2xl shadow-[#27dfb3] py-[0.55rem] px-[3rem] flex justify-center items-center gap-[0.8vmax] rounded-md text-[1.45rem] font-medium text-black font-mango leading-none tracking-wider' href={falguni_mondal_resume} download>Resume</a>
             </div>
             <Socials />
           </div>
