@@ -59,12 +59,12 @@ const About = () => {
                         <RoughNotation type='circle' color='#0ed8a9' animate={true} show={true}>seeking</RoughNotation>
                     </span>
                     {
-                        " an ".split(' ').map((val, index) => (
+                        " an entry-level ".split(' ').map((val, index) => (
                             <span key={index} className='splitted-about'>{`${val} `}</span>
                         ))
                     }
                     <span className='splitted-about'>
-                        <RoughNotation type='underline' color='#0ed8a9' animate={true} show={true}>entry-level opportunity</RoughNotation>
+                        <RoughNotation type='underline' color='#0ed8a9' animate={true} show={true}>opportunity</RoughNotation>
                     </span>
                     {
                         " to kickstart my career in frontend development.".split(' ').map((val, index) => (
