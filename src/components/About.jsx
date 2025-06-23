@@ -14,7 +14,7 @@ const About = () => {
             scrollTrigger: {
                 trigger: '.splitted-about',
                 start: `${screen > 1024 ? "top 60%" : "top 80%"}`,
-                end: `${screen > 1024 ? "top -90%" : "top -70%"}`,
+                end: `${screen > 1024 ? "top -90%" : "top -60%"}`,
                 scrub: 2,
             }
         })
