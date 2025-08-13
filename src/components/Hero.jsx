@@ -1,7 +1,6 @@
 import falgunimin from '../assets/mine/falgunimin.jpg'
 // import SectionHeading from './SectionHeading'
-import falguni_mondal_resume from "../assets/mine/falguni_mondal_resume.pdf";
-import { GoDownload } from "react-icons/go";
+import falguni_mondal_resume from "../assets/mine/falguni_mondal_resume_fullstack.pdf";
 import Socials from './Socials'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
@@ -10,6 +9,10 @@ import { BiLogoReact } from "react-icons/bi";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { BiLogoJavascript } from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
+
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+
 
 
 
@@ -87,7 +90,7 @@ const Hero = () => {
             <h1 className='hero-heading text-[9vw] h-[9.5vw] lg:h-[3vw] overflow-hidden lg:text-[2.5vw] flex items-center leading-none gap-1 font-mango font-medium tracking-wide mb-5'><span className='welcome-txt'>Hi, I'm Falguni</span></h1>
             <p className='w-full text-[10vw] lg:text-[4vw] lg:font-light leading-none lg:leading-tight tracking-tight'>
               <span className='flex items-start leading-none justify-center h-[11.8vw] lg:h-[4.5vw] overflow-hidden' ><span className='welcome-txt block' >Elevating the web </span></span>
-              <span className='flex items-start leading-none justify-center h-[11.8vw] lg:h-[4.5vw] overflow-hidden' ><span className='welcome-txt block' >with a <span className='text-[#27dfb3] font-mango text-[12.5vw] lg:text-[5.5vw] tracking-wide'>frontend</span> </span></span>
+              <span className='flex items-start leading-none justify-center h-[11.8vw] lg:h-[4.5vw] overflow-hidden' ><span className='welcome-txt block' >with a <span className='text-[#27dfb3] font-mango text-[12.5vw] lg:text-[5.5vw] tracking-wide'>full-stack</span> </span></span>
               <span className='flex items-start leading-none justify-center h-[11.8vw] lg:h-[4.5vw] overflow-hidden' ><span className='welcome-txt block' >developer's touch.</span></span>
             </p>
 
@@ -97,10 +100,12 @@ const Hero = () => {
                 <BiLogoReact className='text-[1.7rem] text-[#38BBF8]' />
               </div>
               <div className="box bg-[#27dfb413] rounded-sm flex justify-center items-center p-3">
-                <BiLogoJavascript className='text-[1.7rem] text-[#F9C026]' />
+                {/* <BiLogoJavascript className='text-[1.7rem] text-[#F9C026]' /> */}
+                <SiMongodb className='text-[1.7rem] text-[#188062]' />
               </div>
               <div className="box bg-[#27dfb413] rounded-sm flex justify-center items-center p-3">
-                <BiLogoTailwindCss className='text-[1.7rem] text-[#39BDF7]' />
+                {/* <BiLogoTailwindCss className='text-[1.7rem] text-[#39BDF7]' /> */}
+                <SiExpress className='text-[1.7rem] text-[#c8e1ec]' />
               </div>
               <div className="box bg-[#27dfb413] rounded-sm flex justify-center items-center p-3">
                 <FaNodeJs className='text-[1.5rem] text-[#3f9b3e]' />
