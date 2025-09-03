@@ -72,16 +72,6 @@ const Hero = () => {
         <span className='hidden hero-lighting lg:block h-[20vh] w-[30vw] lg:rounded-[50%] absolute bg-[#27DFB3] blur-[200px] bottom-[-10vh] right-[2vw] opacity-50'></span>
 
         <div className="hero-main w-full">
-          {/* <div className="my-info text-center mt-[1vh] flex flex-col items-center">
-            <h1 className='hero-heading text-[9vw] h-[11.5vw] lg:h-[5.5vw] overflow-hidden lg:text-[5vw] font-medium lg:font-light flex items-start leading-none gap-1'><span className='welcome-txt'>Hi<span className='hand inline-block origin-bottom-right text-[8vw] lg:text-[5vw]'>👋</span>, I'm </span><span className='inline-block welcome-txt'><img className=' hero-img w-[13.5vw] lg:w-[8vw] h-[8vw] lg:h-[5vw] object-cover object-center rounded-full shadow-2xl shadow-[rgba(39,223,179,0.15)]' src={falgunimin} alt="" fetchPriority='high' /></span><span className='welcome-txt'> Falguni</span></h1>
-            <p className='w-full text-[10vw] lg:text-[5vw] lg:font-light leading-[45px] lg:leading-tight tracking-tight'>
-              <span className='flex items-start leading-none justify-center h-[11.8vw] lg:h-[5.5vw] overflow-hidden' ><span className='welcome-txt block' >Elevating the web </span></span>
-              <span className='flex items-start leading-none justify-center h-[11.8vw] lg:h-[5.5vw] overflow-hidden' ><span className='welcome-txt block' >with a <span className='text-[#27dfb3]'>frontend</span> </span></span>
-              <span className='flex items-start leading-none justify-center h-[11.8vw] lg:h-[5.5vw] overflow-hidden' ><span className='welcome-txt block' >developer's touch.</span></span>
-            </p>
-            <a className='resume bg-[#27dfb3] shadow-2xl shadow-[#27dfb3] py-2 w-[35vw] lg:w-[15vw]  flex justify-center items-center gap-[0.8vmax] rounded-md text-[4vw] lg:text-[1.2vw] font-medium text-black mt-[4vh] mb-[15vh] lg:mb-[2vh]' href={falguni_mondal_resume} download>Resume <GoDownload /> </a>
-            <Socials />
-          </div> */}
 
           <div className="my-info text-center mt-[1vh] flex flex-col items-center">
             <div className="img-container w-[35vw] lg:w-[10vw] h-[35vw] lg:h-[10vw] rounded-full overflow-hidden mb-3">
@@ -120,22 +110,6 @@ const Hero = () => {
             </div>
             <Socials />
           </div>
-
-          {/* <div className="tech-stack w-fit grid grid-cols-4 gap-1 rounded-md overflow-hidden">
-            <div className="box bg-[#27dfb413] rounded-sm flex justify-center items-center p-3">
-              <BiLogoReact className='text-[2rem] text-[#38BBF8]' />
-            </div>
-            <div className="box bg-[#27dfb413] rounded-sm flex justify-center items-center p-3">
-              <BiLogoJavascript className='text-[2rem] text-[#F9C026]' />
-            </div>
-            <div className="box bg-[#27dfb413] rounded-sm flex justify-center items-center p-3">
-              <BiLogoTailwindCss className='text-[2rem] text-[#39BDF7]' />
-            </div>
-            <div className="box bg-[#27dfb413] rounded-sm flex justify-center items-center p-3">
-              <FaNodeJs className='text-[1.8rem] text-[#3f9b3e]' />
-            </div>
-          </div> */}
-
         </div>
       </div>
     </section>
