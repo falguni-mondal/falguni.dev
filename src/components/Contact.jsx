@@ -15,7 +15,7 @@ const Contact = ({ setVisible, setProcessing, setSuccess, processing, visible })
 
   const formHandler = async (e) => {
     e.preventDefault();
-    if(processing || visible){
+    if (processing || visible) {
       return;
     }
     setVisible(true);
@@ -24,19 +24,18 @@ const Contact = ({ setVisible, setProcessing, setSuccess, processing, visible })
     const email = emailRef.current.value;
     const message = messageRef.current.value;
 
-    const response = await axios.post(`${baseUrl}/api/contact`, { email, message });
-    setProcessing(false);
-
-    if (response.data.success) {
+    try {
+      const response = await axios.post(`${baseUrl}/api/contact`, { email, message });
+      setProcessing(false);
       setSuccess(true);
       emailRef.current.value = "";
       messageRef.current.value = "";
       setTimeout(() => {
         setVisible(false);
       }, 3000);
-    }
-    else {
-      console.log(response.data.message);
+    } catch (err) {
+      console.log(err);
+      setProcessing(false);
       setSuccess(false);
       setTimeout(() => {
         setVisible(false);
@@ -50,10 +49,15 @@ const Contact = ({ setVisible, setProcessing, setSuccess, processing, visible })
       <SectionHeading heading={'Connect.'} />
       <div className="contact-here w-full flex flex-col lg:flex-row gap-20">
         <form ref={form} onSubmit={(e) => formHandler(e)} className='w-full lg:w-2/3 flex flex-col gap-8' name='contact'>
+
           <input ref={emailRef} name='email' className='w-full outline-none py-2 lg:py-4 bg-transparent border-b-2 border-[#f8f8f8] placeholder:text-[#f8f8f8] text-[0.9rem] lg:text-[1.2rem]' placeholder='Your email' type="email" required />
+
           <textarea ref={messageRef} name='message' className='w-full resize-none text-[0.9rem] lg:text-[1.2rem] outline-none bg-transparent border-b-2 border-[#f8f8f8] placeholder:text-[#f8f8f8]' placeholder='Message' rows={8} id="connnect-message" required></textarea>
+
           <button type='submit' value="send" className='text-zinc-900 bg-[#0ed8a9] font-medium xl:font-semibold py-2.5 lg:py-4 w-[45vw] lg:w-[30ch] rounded-full lg:rounded'>Send Message</button>
+
         </form>
+
         <div className="contact-dets-sontainer lg:w-1/3 flex flex-col gap-8">
           <div className='contact-dets flex flex-col'>
             <h3 className='text-[4vw] lg:text-[1.7vw] font-semibold mb-2'>Contact Details</h3>
@@ -71,6 +75,7 @@ const Contact = ({ setVisible, setProcessing, setSuccess, processing, visible })
               </li>
             </ul>
           </div>
+
           <div className="location-dets flex flex-col">
             <h3 className='text-[4vw] lg:text-[1.7vw] font-semibold mb-2'>Location</h3>
             <span className='text-[3vw] lg:text-[1.1vw]'>Durgapur, West Bengal, India</span>
