@@ -18,18 +18,8 @@ const About = () => {
                 scrub: 2,
             }
         })
-        gsap.from(".falguni_img", {
-            opacity: 0,
-            y: 15,
-            duration: 1,
-            scrollTrigger: {
-                trigger: '.falguni_img',
-                start: 'top 60%',
-                end: 'top 0%',
-            }
-        })
         {
-            ['connect-underline', 'project-underline', 'skill-underline', 'certify-underline'].map((elem) => {
+            ['project-underline', 'skill-underline', 'certify-underline'].map((elem) => {
                 gsap.from(`.${elem}`, {
                     width: 0,
                     duration: 1.5,

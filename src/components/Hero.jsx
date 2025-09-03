@@ -53,13 +53,6 @@ const Hero = () => {
       duration: 1,
       delay: 1.3,
     })
-    gsap.from('.green-bg', {
-      opacity: 1,
-      scale: 0,
-      backgroundColor: "#16a34a",
-      duration: 1.8,
-      repeat: -1
-    })
   })
 
   return (
