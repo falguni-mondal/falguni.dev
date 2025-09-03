@@ -35,7 +35,6 @@ const Contact = ({ setVisible, setProcessing, setSuccess, processing, visible })
       }, 3000);
     } catch (err) {
       console.log(err);
-      console.log(`${baseUrl}/api/contact`);
       setProcessing(false);
       setSuccess(false);
       setTimeout(() => {
