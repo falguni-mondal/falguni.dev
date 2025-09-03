@@ -25,7 +25,7 @@ const Contact = ({ setVisible, setProcessing, setSuccess, processing, visible })
     const message = messageRef.current.value;
 
     try {
-      const response = await axios.post(`${baseUrl}/api/contact`, { email, message });
+      const response = await axios.post(`${baseUrl}/api/contact`, { email, message }, {withCredentials: true});
       setProcessing(false);
       setSuccess(true);
       emailRef.current.value = "";
@@ -35,6 +35,7 @@ const Contact = ({ setVisible, setProcessing, setSuccess, processing, visible })
       }, 3000);
     } catch (err) {
       console.log(err);
+      console.log(`${baseUrl}/api/contact`);
       setProcessing(false);
       setSuccess(false);
       setTimeout(() => {
